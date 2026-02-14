@@ -11,7 +11,7 @@ import {
 import { resumeData } from './data/resumeData'
 
 function App() {
-  const { profile, summary, skills, featuredBuilds, experience, education, publications } = resumeData
+  const { profile, summary, education, skills, experience, personalProjects, publications } = resumeData
 
   return (
     <div className="min-h-screen bg-bg">
@@ -28,11 +28,11 @@ function App() {
         <Container size="default">
           <ResumeHeader profile={profile} />
           <SummaryBlock summary={summary} sectionTitle="Professional Summary" />
-          <SkillsSection skills={skills} sectionTitle="Technical Stack" />
-          <ExperienceSection experiences={featuredBuilds} sectionTitle="Featured Builds & Agentic Systems" />
-          <ExperienceSection experiences={experience} sectionTitle="Professional Experience" />
           <EducationSection education={education} />
-          <PublicationsSection publications={publications} />
+          <SkillsSection skills={skills} sectionTitle="Skills" />
+          <ExperienceSection experiences={experience} sectionTitle="Experience" />
+          <ExperienceSection experiences={personalProjects} sectionTitle="Personal Projects" />
+          <PublicationsSection publications={publications} sectionTitle="Publications" />
         </Container>
       </main>
     </div>

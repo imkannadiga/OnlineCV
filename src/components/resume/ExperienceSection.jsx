@@ -20,10 +20,13 @@ export function ExperienceSection({ experiences, sectionTitle = 'Experience' }) 
                   {job.endDate && job.endDate !== job.startDate ? ` — ${job.endDate}` : ''}
                 </span>
               </div>
-              <p className="text-indigo-300 font-medium text-sm mb-3">
-                {job.company}
-                {job.location && ` · ${job.location}`}
-              </p>
+              {(job.company || job.location) && (
+                <p className="text-indigo-300 font-medium text-sm mb-3">
+                  {job.company}
+                  {job.company && job.location && ` · `}
+                  {job.location}
+                </p>
+              )}
               {job.highlights && job.highlights.length > 0 && (
                 <ul className="list-disc list-inside space-y-1 text-slate-300 text-sm">
                   {job.highlights.map((item, i) => (

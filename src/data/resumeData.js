@@ -4,8 +4,8 @@
 export const resumeData = {
   profile: {
     name: 'Athreya Hosahalli Prakash',
-    title: 'AI Product Engineer',
-    tagline: 'Full-Stack Builder · AI-Native Developer',
+    title: 'AI & Software Engineer',
+    tagline: 'Python · Distributed Computing · Cloud-Native Architectures',
     email: 'athreyahosahalliprakash@gmail.com',
     phone: '+49 1590 637 6601',
     location: 'Stuttgart, DE',
@@ -15,134 +15,147 @@ export const resumeData = {
     avatar: null,
   },
 
-  summary: `AI Product Engineer and Full-Stack Builder with a bias for action. AI-Native developer proficient in using Cursor and LLMs to accelerate development velocity. Specializing in Agentic Systems, RAG, and Cloud-Native Infrastructure. Experienced in taking products from "zero-to-one" using modern AI stacks (LangChain, CrewAI). Proven track record of building reliable, human-in-the-loop AI pipelines and scalable backend architectures (Kubernetes/AWS). Passionate about shipping fast, iterating in public, and exploring the frontier of autonomous commerce.`,
+  summary: `AI & Software Engineer with strong expertise in Python, Distributed Computing, and Cloud-Native Architectures. Experienced in building mission-critical backend infrastructure using Kubernetes, AWS, and Microservices. Proven track record in collaborating with cross-functional teams to engineer innovative solutions for the automotive and industrial sectors. Proficient with DevOps practices, CI/CD implementation, and applying intermediate subject matter expertise to solve complex application and infrastructure problems.`,
 
-  skills: [
-    {
-      category: 'AI-Native Workflow',
-      items: ['Cursor (Daily Driver)', 'Replit', 'Copilot', 'Rapid Prototyping', 'Prompt Engineering'],
-    },
-    {
-      category: 'Agentic AI',
-      items: ['Agents (CrewAI, LangChain)', 'RAG (ChromaDB)', 'LiteLLM', 'HRLHF (Human-in-the-Loop)', 'Evals'],
-    },
-    {
-      category: 'Product Engineering',
-      items: ['Python', 'FastAPI', 'Streamlit', 'React', 'Docker/Apptainer'],
-    },
-    {
-      category: 'Cloud & DevOps',
-      items: ['AWS', 'Kubernetes', 'Terraform', 'Prometheus/Grafana (Observability)', 'CI/CD'],
-    },
-    {
-      category: 'Core AI',
-      items: ['PyTorch', 'Computer Vision (CNNs)', 'Reinforcement Learning', 'Flow Matching'],
-    },
-    {
-      category: 'Languages',
-      items: ['English (Native)', 'German (Conversational)'],
-    },
-  ],
-
-  featuredBuilds: [
+  education: [
     {
       id: '1',
-      role: 'CognitiveScrum — Multi-Agent Orchestration Platform',
-      company: 'Personal "Zero-to-One" Build',
-      location: null,
-      startDate: 'Jan 2026',
-      endDate: null,
-      highlights: [
-        'High-Velocity Shipping: Leveraged Cursor and AI-assisted workflows to go from concept to functional MVP in under 2 weeks, iterating on complex agent logic rapidly.',
-        'Agentic Architecture: Built a CrewAI-based planning pipeline with specialized agents (Staffing, Scheduler, Critic) to autonomously manage sprint planning.',
-        'Model Agnostic Design: Implemented dynamic LiteLLM configuration to switch between OpenAI, Anthropic, and Ollama models seamlessly, optimizing for cost vs. intelligence.',
-        'Production Features: Integrated ChromaDB for persistent RAG (resumes/backlogs) and context sufficiency scoring.',
-      ],
+      degree: 'Master of Science in Information Technology (Current Grade: 2.4/4.0)',
+      school: 'Universität Stuttgart',
+      location: 'Stuttgart, DE',
+      year: 'Oct 2023 – Present',
+      highlights: ['Specialization: Computer Software/Hardware Engineering'],
     },
     {
       id: '2',
-      role: 'Agentic Causality Mining & Reliability [Master Thesis]',
-      company: 'Focus: AI Reliability & Human-in-the-Loop',
-      location: null,
-      startDate: 'Oct 2025',
-      endDate: null,
-      highlights: [
-        'Reliable AI: Designed a Human-in-the-Loop (HITL) pipeline using Reinforcement Learning (HRLHF) to validate anomaly detection in live environments.',
-        'Causal Inference Agents: Developed an LLM-based agent pipeline to read system logs and infer causal relationships, improving debugging speed for distributed systems.',
-      ],
+      degree: 'Bachelor of Engineering in Electronics & Instrumentation (GPA: 1.4/4.0)',
+      school: 'RNS Institute of Technology',
+      location: 'Bangalore, IN',
+      year: 'Aug 2018 – Jul 2022',
+      highlights: ['Achievement: Secured 9th Rank in the University for the academic year'],
+    },
+  ],
+
+  skills: [
+    {
+      category: 'Languages & Frameworks',
+      items: ['Python', 'C++', 'Java', 'Julia', 'PyTorch', 'TensorFlow', 'LangChain', 'FastAPI'],
     },
     {
-      id: '3',
-      role: 'Autonomous Fleet Orchestration Framework',
-      company: 'Focus: Infrastructure & Latency',
-      location: null,
-      startDate: 'Sept 2024',
-      endDate: null,
-      highlights: [
-        'Architected a cloud-native, event-driven framework (ROS2, Java, Kubernetes) for connected robot fleets.',
-        'Optimized latency budgets for real-time bi-directional command transmission (Cloud-to-Robot) for Autonomous Valet Parking.',
-      ],
+      category: 'Cloud & DevOps',
+      items: ['AWS', 'Kubernetes', 'Slurm', 'Docker/Apptainer', 'Prometheus', 'Grafana', 'Terraform'],
+    },
+    {
+      category: 'Robotics & Automotive',
+      items: ['ROS2', 'Nav2', 'SLAM', 'MPC', 'Fleet Orchestration', 'Lidar Processing'],
+    },
+    {
+      category: 'AI & Agentic Systems',
+      items: ['LLMs (RAG, Agents)', 'Reinforcement Learning (HRLHF)', 'Computer Vision (CNNs, Flow Matching, Neural operators)'],
+    },
+    {
+      category: 'Languages',
+      items: ['English (Native)', 'German (Conversational, actively learning)'],
     },
   ],
 
   experience: [
     {
       id: '1',
-      role: 'ML Infrastructure Engineer (Research Assistant)',
+      role: 'Research Assistant (HiWi)',
       company: 'Universität Stuttgart',
       location: 'Stuttgart, DE',
       startDate: 'Nov 2023',
       endDate: 'Present',
       highlights: [
-        'Infrastructure Ownership: Architected a scalable ML cluster using Slurm and Kubernetes, enabling researchers to ship models faster.',
-        'Containerization: Implemented "Bring Your Own Code" models via Apptainer, reducing environment setup time.',
-        'Monitoring: Deployed backend architecture for AI monitoring, ensuring system robustness and observability.',
+        'MLOps Infrastructure Design: Architected a scalable, on-premise ML cluster using Slurm and KVM, implementing a secure "Bring Your Own Code" model via Apptainer bind mounts to minimize dependency friction.',
+        'AI engineering: Developed AI-based anomaly detection and causality mining algorithms to accelerate fault localization in distributed systems.',
+        'Designed and deployed scalable backend architecture for AI monitoring utilizing Kubernetes for container orchestration.',
       ],
     },
     {
       id: '2',
-      role: 'Software Engineer (Backend)',
+      role: 'Software Engineer',
       company: 'Liftoff LLC',
       location: 'Bangalore, IN',
       startDate: 'Sep 2022',
       endDate: 'Sep 2023',
       highlights: [
-        'Scale & Reliability: Architected low-latency backend infrastructure on AWS, ensuring 99.9% uptime for high-traffic services.',
-        'Cost Optimization: Refactored architectural design to reduce cloud infrastructure costs by 30%.',
-        'CI/CD: Built automated pipelines (GitHub Actions) to eliminate deployment errors and increase shipping velocity.',
+        'Architected low-latency backend infrastructure on AWS (Elastic Beanstalk), ensuring 99.9% uptime for high-traffic services.',
+        'Refined architectural design to reduce maintenance costs by 30% through infrastructure optimization.',
+        'Designed automated CI/CD pipelines using GitHub Actions, eliminating deployment errors and improving production stability.',
       ],
     },
     {
       id: '3',
-      role: 'Deep Learning Engineer (Intern)',
+      role: 'Research Intern — Deep Learning',
       company: 'Niramai Health Analytics',
       location: 'Bangalore, IN',
       startDate: 'Feb 2021',
       endDate: 'Jul 2022',
       highlights: [
-        'Engineered CNNs for medical risk estimation, working with incomplete datasets and custom loss functions.',
+        'Engineered and trained Convolutional Neural Networks (CNNs) for medical risk estimation, optimizing for incomplete datasets.',
+        'Designed Multi-Task Learning (MTL) architectures with custom loss functions to enhance model generalization.',
       ],
     },
   ],
 
-  education: [
+  personalProjects: [
     {
       id: '1',
-      degree: 'M.Sc. in Information Technology (Specialization: Software Engineering)',
-      school: 'Universität Stuttgart',
-      location: 'Stuttgart, DE',
-      year: 'Oct 2023 – Present',
+      role: 'CognitiveScrum — An AI based scrum master',
+      company: null,
+      location: null,
+      startDate: 'Jan 2026',
+      endDate: null,
+      highlights: [
+        'Developed an intelligent interview agent with context sufficiency scoring (0-100%) and a CrewAI-based planning pipeline that features three specialized agents: Staffing Expert for skill matching, Scheduler for capacity-aware assignments, and Critic for validation and risk assessment.',
+        'Designed and implemented a Streamlit-based multi-tab interface with dynamic LiteLLM configuration supporting multiple providers (Ollama, OpenAI, Anthropic), enabling seamless model switching without code changes.',
+        'Integrated persistent ChromaDB vector storage for resumes, backlog items, and conversational context, enabling semantic search and combined context retrieval for enhanced sprint planning with iterative refinement capabilities.',
+      ],
     },
     {
       id: '2',
-      degree: 'B.E. in Electronics & Instrumentation (Top 10 University Rank)',
-      school: 'RNS Institute of Technology',
-      location: 'Bangalore, IN',
-      year: 'Aug 2018 – Jul 2022',
+      role: 'Design of a multi-modal causality mining approach using anomaly detection [Master Thesis]',
+      company: null,
+      location: null,
+      startDate: 'Oct 2025',
+      endDate: null,
+      highlights: [
+        'Designed and Implemented an RL-based online Anomaly Detection algorithm with "Human-in-the-Loop" feedback, significantly improving detection precision in live environments.',
+        'Developed a novel Agentic AI pipeline utilizing Large Language Models (LLMs) to infer causal relationships from system metrics and logs to improve interpretability.',
+        'Integrated detection modules into a HRLHF (Reinforcement Learning from Human Feedback) pipeline for automated fault diagnosis.',
+      ],
+    },
+    {
+      id: '3',
+      role: 'Flow matching for parametric PDE simulations',
+      company: null,
+      location: null,
+      startDate: 'June 2025',
+      endDate: null,
+      highlights: [
+        'Generative Modeling for Physics: Investigated and implemented Flow Matching models as a superior alternative to Diffusion models for parametric PDE simulations, focusing on computational efficiency and inference speed.',
+        'Unified Training Framework: Developed a scalable, unified training framework to benchmark various flow matching approaches, enabling rapid prototyping and evaluation of physics-informed models.',
+        'Algorithm Benchmarking: Conducted rigorous comparative analysis of flow matching techniques to optimize the simulation of parametric PDEs, demonstrating reduced computational overhead compared to traditional solvers.',
+      ],
+    },
+    {
+      id: '4',
+      role: 'Design of an event based framework for autonomous navigation use cases',
+      company: null,
+      location: null,
+      startDate: 'Sept 2024',
+      endDate: null,
+      highlights: [
+        'Architected a cloud-native event-driven framework using ROS2, Java Spring Boot, and Kubernetes for connected vehicle fleets.',
+        'Optimized SLAM and path-planning algorithms (Nav2, MPC) on AgileX Scout 2.0 UGVs for robust obstacle avoidance.',
+        'Deployed an Autonomous Valet Parking prototype with real-time bi-directional command transmission (cloud-to-robot).',
+      ],
     },
   ],
 
   publications: [
-    'Weiß, M., Dettinger, F., Prakash, A. H., et al. Self-Adaptive Anomaly Detection with Reinforcement Learning and Human Feedback. Institute of Industrial Automation and Software Engineering (IAS).',
+    'Weiß, M., Dettinger, F., Prakash, A. H., Jazdi, N., & Weyrich, M. (n.d.). Self-Adaptive Anomaly Detection with Reinforcement Learning and Human Feedback in Connected Vehicles. Institute of Industrial Automation and Software Engineering (IAS), University of Stuttgart.',
   ],
 }

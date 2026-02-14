@@ -23,6 +23,13 @@ export function EducationSection({ education, sectionTitle = 'Education' }) {
                   {item.year}
                 </Text>
               )}
+              {item.highlights && item.highlights.length > 0 && (
+                <ul className="list-disc list-inside space-y-1 text-slate-300 text-sm mt-2">
+                  {item.highlights.map((h, i) => (
+                    <li key={i}>{h}</li>
+                  ))}
+                </ul>
+              )}
             </Card>
           </li>
         ))}
