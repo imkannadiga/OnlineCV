@@ -6,11 +6,12 @@ import {
   ExperienceSection,
   EducationSection,
   SkillsSection,
+  PublicationsSection,
 } from './components/resume'
 import { resumeData } from './data/resumeData'
 
 function App() {
-  const { profile, summary, experience, education, skills } = resumeData
+  const { profile, summary, skills, featuredBuilds, experience, education, publications } = resumeData
 
   return (
     <div className="min-h-screen bg-bg">
@@ -26,10 +27,12 @@ function App() {
       <main className="relative pt-12 pb-16">
         <Container size="default">
           <ResumeHeader profile={profile} />
-          <SummaryBlock summary={summary} />
-          <ExperienceSection experiences={experience} />
+          <SummaryBlock summary={summary} sectionTitle="Professional Summary" />
+          <SkillsSection skills={skills} sectionTitle="Technical Stack" />
+          <ExperienceSection experiences={featuredBuilds} sectionTitle="Featured Builds & Agentic Systems" />
+          <ExperienceSection experiences={experience} sectionTitle="Professional Experience" />
           <EducationSection education={education} />
-          <SkillsSection skills={skills} />
+          <PublicationsSection publications={publications} />
         </Container>
       </main>
     </div>

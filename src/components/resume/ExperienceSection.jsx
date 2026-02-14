@@ -16,7 +16,8 @@ export function ExperienceSection({ experiences, sectionTitle = 'Experience' }) 
                   {job.role}
                 </Heading>
                 <span className="text-sm text-slate-500 font-mono">
-                  {job.startDate} — {job.endDate}
+                  {job.startDate}
+                  {job.endDate && job.endDate !== job.startDate ? ` — ${job.endDate}` : ''}
                 </span>
               </div>
               <p className="text-indigo-300 font-medium text-sm mb-3">

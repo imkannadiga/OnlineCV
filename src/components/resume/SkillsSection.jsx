@@ -15,7 +15,7 @@ export function SkillsSection({ skills, sectionTitle = 'Skills' }) {
             </h3>
             <div className="flex flex-wrap gap-2">
               {group.items.map((skill) => (
-                <Badge key={skill} variant={group.category === 'Frontend' ? 'accent' : 'default'}>
+                <Badge key={skill} variant={group.category === skills[0]?.category ? 'accent' : 'default'}>
                   {skill}
                 </Badge>
               ))}

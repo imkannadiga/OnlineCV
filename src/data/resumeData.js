@@ -1,57 +1,126 @@
 /**
- * Sample resume data. Replace with your own or load from API/JSON.
+ * Resume data for Athreya Hosahalli Prakash
  */
 export const resumeData = {
   profile: {
-    name: 'Alex Rivera',
-    title: 'Senior Frontend Engineer',
-    tagline: 'Building fast, accessible, and delightful web experiences',
-    email: 'alex.rivera@email.com',
-    phone: '+1 (555) 123-4567',
-    location: 'San Francisco, CA',
-    website: 'https://alexrivera.dev',
-    linkedin: 'https://linkedin.com/in/alexrivera',
-    github: 'https://github.com/alexrivera',
-    avatar: null, // optional: URL or path to image
+    name: 'Athreya Hosahalli Prakash',
+    title: 'AI Product Engineer',
+    tagline: 'Full-Stack Builder · AI-Native Developer',
+    email: 'athreyahosahalliprakash@gmail.com',
+    phone: '+49 1590 637 6601',
+    location: 'Stuttgart, DE',
+    website: null,
+    linkedin: 'https://www.linkedin.com/in/athreya-prakash/',
+    github: 'https://github.com/imkannadiga',
+    avatar: null,
   },
-  summary: `Frontend expert with 8+ years building React applications and design systems. Passionate about performance, accessibility, and clean architecture. Previously at tech startups and product companies.`,
 
-  experience: [
+  summary: `AI Product Engineer and Full-Stack Builder with a bias for action. AI-Native developer proficient in using Cursor and LLMs to accelerate development velocity. Specializing in Agentic Systems, RAG, and Cloud-Native Infrastructure. Experienced in taking products from "zero-to-one" using modern AI stacks (LangChain, CrewAI). Proven track record of building reliable, human-in-the-loop AI pipelines and scalable backend architectures (Kubernetes/AWS). Passionate about shipping fast, iterating in public, and exploring the frontier of autonomous commerce.`,
+
+  skills: [
+    {
+      category: 'AI-Native Workflow',
+      items: ['Cursor (Daily Driver)', 'Replit', 'Copilot', 'Rapid Prototyping', 'Prompt Engineering'],
+    },
+    {
+      category: 'Agentic AI',
+      items: ['Agents (CrewAI, LangChain)', 'RAG (ChromaDB)', 'LiteLLM', 'HRLHF (Human-in-the-Loop)', 'Evals'],
+    },
+    {
+      category: 'Product Engineering',
+      items: ['Python', 'FastAPI', 'Streamlit', 'React', 'Docker/Apptainer'],
+    },
+    {
+      category: 'Cloud & DevOps',
+      items: ['AWS', 'Kubernetes', 'Terraform', 'Prometheus/Grafana (Observability)', 'CI/CD'],
+    },
+    {
+      category: 'Core AI',
+      items: ['PyTorch', 'Computer Vision (CNNs)', 'Reinforcement Learning', 'Flow Matching'],
+    },
+    {
+      category: 'Languages',
+      items: ['English (Native)', 'German (Conversational)'],
+    },
+  ],
+
+  featuredBuilds: [
     {
       id: '1',
-      role: 'Senior Frontend Engineer',
-      company: 'TechFlow Inc.',
-      location: 'Remote',
-      startDate: '2021',
-      endDate: 'Present',
+      role: 'CognitiveScrum — Multi-Agent Orchestration Platform',
+      company: 'Personal "Zero-to-One" Build',
+      location: null,
+      startDate: 'Jan 2026',
+      endDate: null,
       highlights: [
-        'Led migration to React 18 and Vite; reduced build time by 60%.',
-        'Designed and implemented a reusable component library used across 5 products.',
-        'Improved Core Web Vitals (LCP, FID) and accessibility (WCAG 2.1 AA).',
+        'High-Velocity Shipping: Leveraged Cursor and AI-assisted workflows to go from concept to functional MVP in under 2 weeks, iterating on complex agent logic rapidly.',
+        'Agentic Architecture: Built a CrewAI-based planning pipeline with specialized agents (Staffing, Scheduler, Critic) to autonomously manage sprint planning.',
+        'Model Agnostic Design: Implemented dynamic LiteLLM configuration to switch between OpenAI, Anthropic, and Ollama models seamlessly, optimizing for cost vs. intelligence.',
+        'Production Features: Integrated ChromaDB for persistent RAG (resumes/backlogs) and context sufficiency scoring.',
       ],
     },
     {
       id: '2',
-      role: 'Frontend Developer',
-      company: 'StartupLab',
-      location: 'San Francisco, CA',
-      startDate: '2018',
-      endDate: '2021',
+      role: 'Agentic Causality Mining & Reliability [Master Thesis]',
+      company: 'Focus: AI Reliability & Human-in-the-Loop',
+      location: null,
+      startDate: 'Oct 2025',
+      endDate: null,
       highlights: [
-        'Built customer dashboard and real-time analytics views in React.',
-        'Collaborated with design on a design system and token-based theming.',
+        'Reliable AI: Designed a Human-in-the-Loop (HITL) pipeline using Reinforcement Learning (HRLHF) to validate anomaly detection in live environments.',
+        'Causal Inference Agents: Developed an LLM-based agent pipeline to read system logs and infer causal relationships, improving debugging speed for distributed systems.',
       ],
     },
     {
       id: '3',
-      role: 'Web Developer',
-      company: 'Digital Agency Co.',
-      location: 'New York, NY',
-      startDate: '2016',
-      endDate: '2018',
+      role: 'Autonomous Fleet Orchestration Framework',
+      company: 'Focus: Infrastructure & Latency',
+      location: null,
+      startDate: 'Sept 2024',
+      endDate: null,
       highlights: [
-        'Delivered responsive sites and small SPAs for enterprise clients.',
-        'Mentored junior developers and established code review practices.',
+        'Architected a cloud-native, event-driven framework (ROS2, Java, Kubernetes) for connected robot fleets.',
+        'Optimized latency budgets for real-time bi-directional command transmission (Cloud-to-Robot) for Autonomous Valet Parking.',
+      ],
+    },
+  ],
+
+  experience: [
+    {
+      id: '1',
+      role: 'ML Infrastructure Engineer (Research Assistant)',
+      company: 'Universität Stuttgart',
+      location: 'Stuttgart, DE',
+      startDate: 'Nov 2023',
+      endDate: 'Present',
+      highlights: [
+        'Infrastructure Ownership: Architected a scalable ML cluster using Slurm and Kubernetes, enabling researchers to ship models faster.',
+        'Containerization: Implemented "Bring Your Own Code" models via Apptainer, reducing environment setup time.',
+        'Monitoring: Deployed backend architecture for AI monitoring, ensuring system robustness and observability.',
+      ],
+    },
+    {
+      id: '2',
+      role: 'Software Engineer (Backend)',
+      company: 'Liftoff LLC',
+      location: 'Bangalore, IN',
+      startDate: 'Sep 2022',
+      endDate: 'Sep 2023',
+      highlights: [
+        'Scale & Reliability: Architected low-latency backend infrastructure on AWS, ensuring 99.9% uptime for high-traffic services.',
+        'Cost Optimization: Refactored architectural design to reduce cloud infrastructure costs by 30%.',
+        'CI/CD: Built automated pipelines (GitHub Actions) to eliminate deployment errors and increase shipping velocity.',
+      ],
+    },
+    {
+      id: '3',
+      role: 'Deep Learning Engineer (Intern)',
+      company: 'Niramai Health Analytics',
+      location: 'Bangalore, IN',
+      startDate: 'Feb 2021',
+      endDate: 'Jul 2022',
+      highlights: [
+        'Engineered CNNs for medical risk estimation, working with incomplete datasets and custom loss functions.',
       ],
     },
   ],
@@ -59,16 +128,21 @@ export const resumeData = {
   education: [
     {
       id: '1',
-      degree: 'B.S. Computer Science',
-      school: 'State University',
-      location: 'Boston, MA',
-      year: '2016',
+      degree: 'M.Sc. in Information Technology (Specialization: Software Engineering)',
+      school: 'Universität Stuttgart',
+      location: 'Stuttgart, DE',
+      year: 'Oct 2023 – Present',
+    },
+    {
+      id: '2',
+      degree: 'B.E. in Electronics & Instrumentation (Top 10 University Rank)',
+      school: 'RNS Institute of Technology',
+      location: 'Bangalore, IN',
+      year: 'Aug 2018 – Jul 2022',
     },
   ],
 
-  skills: [
-    { category: 'Frontend', items: ['React', 'TypeScript', 'Next.js', 'Vite', 'Tailwind CSS', 'CSS-in-JS'] },
-    { category: 'Tools', items: ['Git', 'Figma', 'Jest', 'Cypress', 'Vercel'] },
-    { category: 'Other', items: ['REST APIs', 'GraphQL', 'Accessibility (a11y)', 'Performance'] },
+  publications: [
+    'Weiß, M., Dettinger, F., Prakash, A. H., et al. Self-Adaptive Anomaly Detection with Reinforcement Learning and Human Feedback. Institute of Industrial Automation and Software Engineering (IAS).',
   ],
 }
