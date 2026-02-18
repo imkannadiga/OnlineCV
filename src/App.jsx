@@ -29,9 +29,9 @@ function App() {
           <ResumeHeader profile={profile} />
           <SummaryBlock summary={summary} sectionTitle="Professional Summary" />
           <EducationSection education={education} />
-          <SkillsSection skills={skills} sectionTitle="Skills" />
-          <ExperienceSection experiences={experience} sectionTitle="Experience" />
-          <ExperienceSection experiences={personalProjects} sectionTitle="Personal Projects" />
+          <SkillsSection skills={skills} sectionTitle="Technical Skills" />
+          <ExperienceSection experiences={experience} sectionTitle="Professional Experience" />
+          <ExperienceSection experiences={personalProjects} sectionTitle="Personal Projects & Research" />
           <PublicationsSection publications={publications} sectionTitle="Publications" />
         </Container>
       </main>
