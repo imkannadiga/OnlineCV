@@ -13,7 +13,7 @@ export const resumeData = {
     linkedin: 'https://www.linkedin.com/in/athreya-prakash/',
     github: 'https://github.com/imkannadiga',
     avatar: 'profile.jpg',
-    status: 'Open to Software Engineering & AI/ML roles',
+    status: 'Open to AI/ML & Software engineering roles',
     focus: 'Backend, Cloud & Distributed Systems · Generative AI, RL & Robotics',
     deployedAt: ['Universität Stuttgart', 'Liftoff LLC', 'Niramai Health Analytics'],
     stack: ['Java', 'Python', 'Spring Boot', 'Kubernetes', 'PyTorch', 'ROS2'],
