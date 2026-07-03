@@ -7,9 +7,9 @@ export default {
       colors: {
         bg: {
           DEFAULT: 'var(--color-bg)',
-          elevated: 'var(--color-bg-elevated)',
-          card: 'var(--color-bg-card)',
+          alt: 'var(--color-bg-alt)',
         },
+        surface: 'var(--color-surface)',
         text: {
           DEFAULT: 'var(--color-text)',
           muted: 'var(--color-text-muted)',
@@ -17,23 +17,15 @@ export default {
         border: {
           DEFAULT: 'var(--color-border)',
         },
-        overlay: {
-          DEFAULT: 'var(--color-overlay)',
-          strong: 'var(--color-overlay-strong)',
-        },
-        primary: {
-          DEFAULT: 'var(--color-primary)',
-          light: 'var(--color-primary-light)',
-          dark: 'var(--color-primary-dark)',
-        },
         accent: {
           DEFAULT: 'var(--color-accent)',
-          light: 'var(--color-accent-light)',
-          dark: 'var(--color-accent-dark)',
+          ink: 'var(--color-accent-ink)',
         },
+        ok: 'var(--color-ok)',
       },
       fontFamily: {
-        sans: [['DM Sans', 'system-ui', 'sans-serif']],
+        display: [['Space Grotesk', 'system-ui', 'sans-serif']],
+        sans: [['Inter', 'system-ui', 'sans-serif']],
         mono: [['JetBrains Mono', 'monospace']],
       },
       keyframes: {
@@ -41,9 +33,14 @@ export default {
           from: { opacity: '0', transform: 'translateY(16px)' },
           to: { opacity: '1', transform: 'translateY(0)' },
         },
+        marquee: {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-50%)' },
+        },
       },
       animation: {
         'reveal-up': 'reveal-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+        marquee: 'marquee 28s linear infinite',
       },
     },
   },

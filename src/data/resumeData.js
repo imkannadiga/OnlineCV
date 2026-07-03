@@ -13,7 +13,29 @@ export const resumeData = {
     linkedin: 'https://www.linkedin.com/in/athreya-prakash/',
     github: 'https://github.com/imkannadiga',
     avatar: '/profile.jpg',
+    status: 'Open to Software Engineering & AI/ML roles',
+    focus: 'Backend, Cloud & Distributed Systems · Generative AI, RL & Robotics',
+    deployedAt: ['Universität Stuttgart', 'Liftoff LLC', 'Niramai Health Analytics'],
+    stack: ['Java', 'Python', 'Spring Boot', 'Kubernetes', 'PyTorch', 'ROS2'],
   },
+
+  stats: [
+    { value: '3+', label: 'Years across research & industry' },
+    { value: '95%', label: 'Anomaly-detection efficiency, published' },
+    { value: '2', label: 'Publications · IAS, Univ. Stuttgart' },
+    { value: '30%', label: 'Cloud cost reduction shipped' },
+  ],
+
+  tickerTags: [
+    'Reinforcement Learning',
+    'Generative AI',
+    'Kubernetes',
+    'ROS2 & Robotics',
+    'LLM Fine-Tuning',
+    'HPC / Slurm',
+    'Spring Boot',
+    'AWS',
+  ],
 
   summary: `Software Engineer and AI Researcher with a strong foundation across backend engineering, cloud/distributed systems, and applied machine learning. Combines production engineering (Java Spring Boot, Node.js, AWS, Kubernetes, CI/CD) with hands-on research in Reinforcement Learning, Generative AI (Flow Matching), LLM fine-tuning, and multi-modal human-in-the-loop systems. Backed by published research in self-adaptive, multi-modal anomaly detection at the University of Stuttgart. Experienced in architecting low-latency, high-availability backend services, designing scalable HPC/compute infrastructure, and deploying robotics systems with ROS2. Proven ability to own systems end-to-end — from requirements and experiment design through implementation, deployment, and observability — and to collaborate across cross-disciplinary teams to ship reliable, maintainable, and research-grade software.`,
 

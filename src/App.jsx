@@ -1,56 +1,67 @@
 import React from 'react'
-import { Container, Reveal, ThemeToggle } from './components/ui'
+import { Reveal } from './components/ui'
 import {
-  ResumeHeader,
-  SummaryBlock,
-  ExperienceSection,
-  EducationSection,
-  SkillsSection,
-  PublicationsSection,
-} from './components/resume'
+  Nav,
+  Hero,
+  StatsStrip,
+  Marquee,
+  Overview,
+  ExperienceLog,
+  ProjectsGrid,
+  SkillsGrid,
+  PublicationsList,
+  ContactFooter,
+} from './components/sections'
 import { resumeData } from './data/resumeData'
 import { useTheme } from './hooks/useTheme'
 
+function initials(name) {
+  return name
+    .split(' ')
+    .map((w) => w[0])
+    .join('')
+    .slice(0, 2)
+    .toUpperCase()
+}
+
 function App() {
-  const { profile, summary, education, skills, experience, personalProjects, publications } = resumeData
+  const { profile, summary, education, skills, experience, personalProjects, publications, stats, tickerTags } = resumeData
   const { theme, toggleTheme } = useTheme()
 
   return (
     <div className="min-h-screen bg-bg">
-      {/* Subtle gradient background */}
-      <div
-        className="fixed inset-0 pointer-events-none opacity-20 dark:opacity-30 transition-opacity duration-500"
-        aria-hidden
-        style={{
-          background:
-            'radial-gradient(ellipse 80% 50% at 50% -20%, var(--color-primary), transparent), radial-gradient(ellipse 60% 40% at 100% 50%, var(--color-accent), transparent 50%)',
-        }}
-      />
+      <Nav initials={initials(profile.name)} name={profile.name} theme={theme} onToggleTheme={toggleTheme} />
 
-      <ThemeToggle theme={theme} onToggle={toggleTheme} className="fixed top-4 right-4 sm:top-6 sm:right-6 z-50" />
+      <main>
+        <Hero profile={profile} />
+        <StatsStrip stats={stats} />
+        <Marquee items={tickerTags} />
 
-      <main className="relative pt-12 pb-16">
-        <Container size="default">
-          <ResumeHeader profile={profile} />
+        <Reveal>
+          <Overview summary={summary} stack={profile.stack} education={education} />
+        </Reveal>
+
+        <div className="bg-bg-alt">
           <Reveal>
-            <SummaryBlock summary={summary} sectionTitle="Professional Summary" />
+            <ExperienceLog experiences={experience} />
           </Reveal>
+        </div>
+
+        <Reveal>
+          <ProjectsGrid projects={personalProjects} />
+        </Reveal>
+
+        <div className="bg-bg-alt">
           <Reveal>
-            <EducationSection education={education} />
+            <SkillsGrid skills={skills} />
           </Reveal>
-          <Reveal>
-            <SkillsSection skills={skills} sectionTitle="Technical Skills" />
-          </Reveal>
-          <Reveal>
-            <ExperienceSection experiences={experience} sectionTitle="Professional Experience" />
-          </Reveal>
-          <Reveal>
-            <ExperienceSection experiences={personalProjects} sectionTitle="Personal Projects & Research" />
-          </Reveal>
-          <Reveal>
-            <PublicationsSection publications={publications} sectionTitle="Publications" />
-          </Reveal>
-        </Container>
+        </div>
+
+        <Reveal>
+          <PublicationsList publications={publications} />
+        </Reveal>
+
+        <ContactFooter profile={profile} />
       </main>
     </div>
   )

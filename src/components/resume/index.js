@@ -1,6 +1,0 @@
-export { ResumeHeader } from './ResumeHeader'
-export { ExperienceSection } from './ExperienceSection'
-export { EducationSection } from './EducationSection'
-export { SkillsSection } from './SkillsSection'
-export { SummaryBlock } from './SummaryBlock'
-export { PublicationsSection } from './PublicationsSection'
