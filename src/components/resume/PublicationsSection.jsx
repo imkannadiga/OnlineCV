@@ -12,7 +12,7 @@ export function PublicationsSection({ publications, sectionTitle = 'Publications
         {publications.map((citation, i) => (
           <li key={i}>
             <Card>
-              <Text className="text-slate-300 text-sm leading-relaxed italic">
+              <Text className="text-text text-sm leading-relaxed italic">
                 {citation}
               </Text>
             </Card>

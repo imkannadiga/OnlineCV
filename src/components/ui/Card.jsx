@@ -7,7 +7,7 @@ import React from 'react'
 export function Card({ children, className = '', as: Component = 'div', padding = true, ...props }) {
   return (
     <Component
-      className={`card rounded-xl border border-white/10 bg-bg-card shadow-md transition-shadow hover:shadow-lg ${padding ? 'p-5 sm:p-6' : ''} ${className}`.trim()}
+      className={`card rounded-xl border border-border bg-bg-card shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 hover:border-primary/30 ${padding ? 'p-5 sm:p-6' : ''} ${className}`.trim()}
       {...props}
     >
       {children}

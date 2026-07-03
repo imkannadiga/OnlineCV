@@ -11,20 +11,20 @@ export function EducationSection({ education, sectionTitle = 'Education' }) {
         {education.map((item) => (
           <li key={item.id}>
             <Card>
-              <Heading level={3} className="text-lg text-white mb-1">
+              <Heading level={3} className="text-lg text-text mb-1">
                 {item.degree}
               </Heading>
-              <p className="text-indigo-300 font-medium text-sm">
+              <p className="text-primary font-medium text-sm">
                 {item.school}
                 {item.location && ` · ${item.location}`}
               </p>
               {item.year && (
-                <Text muted className="text-xs mt-1">
+                <Text muted className="text-xs mt-1 font-mono">
                   {item.year}
                 </Text>
               )}
               {item.highlights && item.highlights.length > 0 && (
-                <ul className="list-disc list-inside space-y-1 text-slate-300 text-sm mt-2">
+                <ul className="list-disc list-inside space-y-1 text-text text-sm mt-2">
                   {item.highlights.map((h, i) => (
                     <li key={i}>{h}</li>
                   ))}

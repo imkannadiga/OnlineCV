@@ -2,10 +2,10 @@ import React from 'react'
 import { Heading, Text } from '../ui'
 
 /**
- * Resume header: name, title, tagline, and contact bar.
+ * Resume header: photo, name, title, tagline, and contact bar.
  */
 export function ResumeHeader({ profile }) {
-  const { name, title, tagline, email, phone, location, website, linkedin, github } = profile
+  const { name, title, tagline, email, phone, location, website, linkedin, github, avatar } = profile
 
   const links = [
     { href: `mailto:${email}`, label: email },
@@ -18,14 +18,24 @@ export function ResumeHeader({ profile }) {
 
   return (
     <header className="resume-header text-center pb-8 sm:pb-10">
+      {avatar && (
+        <div className="mx-auto mb-6 h-28 w-28 sm:h-32 sm:w-32 rounded-full p-[3px] bg-gradient-to-br from-primary to-accent shadow-glow transition-transform duration-300 hover:scale-105">
+          <img
+            src={avatar}
+            alt={name}
+            className="h-full w-full rounded-full object-cover border-2 border-bg-card"
+            loading="eager"
+          />
+        </div>
+      )}
       <Heading level={1} gradient className="text-4xl sm:text-5xl mb-2">
         {name}
       </Heading>
-      <Text as="p" className="text-xl text-indigo-300 font-medium mb-1">
+      <Text as="p" className="text-xl text-primary font-medium mb-1">
         {title}
       </Text>
       {tagline && (
-        <Text muted className="text-base max-w-2xl mx-auto mb-6">
+        <Text muted className="text-base max-w-2xl mx-auto mb-6 font-mono">
           {tagline}
         </Text>
       )}
@@ -40,12 +50,12 @@ export function ResumeHeader({ profile }) {
               href={item.href}
               target={item.href.startsWith('http') ? '_blank' : undefined}
               rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-              className="text-slate-400 hover:text-pink-400 transition-colors"
+              className="relative text-text-muted hover:text-accent transition-colors after:absolute after:-bottom-0.5 after:left-0 after:h-px after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full"
             >
               {item.label}
             </a>
           ) : (
-            <span key={item.label} className="text-slate-500">
+            <span key={item.label} className="text-text-muted">
               {item.label}
             </span>
           )

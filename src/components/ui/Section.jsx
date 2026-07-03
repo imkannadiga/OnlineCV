@@ -15,9 +15,10 @@ export function Section({ children, title, id, className = '', as: Component = '
       {title && (
         <h2
           id={`${id || 'section'}-heading`}
-          className="section__title text-2xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-pink-400"
+          className="section__title relative inline-block text-2xl font-bold mb-8 pb-2 text-text"
         >
           {title}
+          <span className="absolute -bottom-2 left-0 h-[3px] w-10 rounded-full bg-gradient-to-r from-primary to-accent" aria-hidden="true" />
         </h2>
       )}
       {children}
