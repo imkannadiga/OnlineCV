@@ -51,7 +51,7 @@ export function Hero({ profile }) {
 
           {avatar && (
             <img
-              src={avatar}
+              src={`${import.meta.env.BASE_URL}${avatar}`}
               alt={name}
               className="w-full sm:w-64 lg:w-72 aspect-[4/5] object-cover border border-border grayscale-[15%]"
               loading="eager"
